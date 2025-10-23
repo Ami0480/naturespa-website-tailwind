@@ -13,7 +13,7 @@ body {
   background-color: white;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   body {
     color: rgba(255, 255, 255, 0.87);
     background-color: #242424;
