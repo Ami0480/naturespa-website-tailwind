@@ -1,10 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
 @import "tailwindcss";
+
+@theme {
+  --font-nunito: "Nunito Sans", sans-serif;
+  --font-cormorant: "Cormorant", serif;
+}
 
 .container {
   @apply p-5;
 }
 
 .navbar {
-  @apply font-[lato] font-bold text-[20px] text-white;
+  @apply font-nunito font-bold text-[20px];
 }

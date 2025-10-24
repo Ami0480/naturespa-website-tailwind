@@ -13,9 +13,9 @@ body {
   background-color: white;
 }
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
   body {
-    color: rgba(255, 255, 255, 0.87);
-    background-color: #242424;
+    color: white;
+    background-color: #917a6b;
   }
 }
