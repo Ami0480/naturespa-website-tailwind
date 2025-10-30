@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+@import url("@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');");
 @import "tailwindcss";
 
 @theme {
-  --font-nunito: "Nunito Sans", sans-serif;
-  --font-cormorant: "Cormorant", serif;
+  --font-cormorant: "Cormorant Garamond", serif;
+  --font-raleway: "Raleway", sans-serif;
 }
 
 .container {
@@ -11,5 +11,5 @@
 }
 
 .navbar {
-  @apply font-nunito font-bold text-[20px];
+  @apply font-raleway text-[20px];
 }
