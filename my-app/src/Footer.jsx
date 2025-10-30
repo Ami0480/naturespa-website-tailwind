@@ -25,7 +25,7 @@ export default function Footer() {
         </div>
 
         <div className="flex flex-1">
-          <ul className="flex mt-5 flex-col gap-3">
+          <ul className="font-raleway flex mt-5 flex-col gap-3">
             <li>08-100-200</li>
             <li>10 Perth St, Perth</li>
             <li>
@@ -54,7 +54,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="relative mt-10 flex flex-col gap-3">
+      <div className="relative mt-10 flex flex-col gap-3 font-raleway">
         <p>Subscribe</p>
         <form>
           <input

@@ -105,7 +105,7 @@ function App() {
         ></img>
         <Link
           to="/booking"
-          className="pr-5 pl-5 pt-3 pb-3 mt-5 text-white rounded-full font-bold font-raleway"
+          className="pr-5 pl-5 pt-3 pb-3 mt-5 mb-10 text-white rounded-full font-bold font-raleway"
           style={{ backgroundColor: "#af9b8e" }}
         >
           View Treatment
