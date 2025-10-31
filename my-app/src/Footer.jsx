@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
 import logo from "./images/Logo.svg";
@@ -70,7 +70,7 @@ export default function Footer() {
           </button>
         </form>
       </div>
-      <p className="text-[14px] mt-10">NATURE@2025</p>
+      <p className="text-[14px] mt-10 font-raleway">NATURE@2025</p>
     </div>
   );
 }
