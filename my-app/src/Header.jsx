@@ -72,6 +72,13 @@ export default function Header() {
         >
           Product
         </Link>
+
+        <Link
+          to="/booking"
+          className="pr-5 pl-5 pt-3 pb-3 mt-5 text-[#af9b8e] bg-white rounded-full font-bold font-raleway hover:opacity-80 ease-in-out"
+        >
+          Book Now
+        </Link>
       </section>
     </div>
   );
