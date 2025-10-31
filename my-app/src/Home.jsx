@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 
 import BackgroundVideo from "./images/background-video.mp4";
-import EssentialOil from "./images/essential-oil.png";
-import BodyPhotoMobile from "./images/body-treatment-photo.png";
-import FacialPhotoMobile from "./images/facial-treatment-photo.png";
-import SunriseMobile from "./images/sunrise.png";
+import EssentialOil from "./images/essential-oil.jpg";
+import BodyPhotoMobile from "./images/body-treatment-photo.jpg";
+import FacialPhotoMobile from "./images/facial-treatment-photo.jpg";
+import SunriseMobile from "./images/sunrise.jpg";
 
 export default function Home() {
   return (
