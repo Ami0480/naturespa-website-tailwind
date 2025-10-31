@@ -71,7 +71,11 @@ export default function Home() {
           ease stress. By caring for your body this way, you boost overall
           wellness and feel more vibrant, balanced, and refreshed.
         </p>
-        <img src={BodyPhotoMobile} alt="Body Treatment" className="mb-8"></img>
+        <img
+          src={BodyPhotoMobile}
+          alt="Body Treatment"
+          className="mb-8 rounded-3xl"
+        ></img>
         <Link
           to="/booking"
           className="pr-5 pl-5 pt-3 pb-3 mt-5 text-white rounded-full font-bold font-raleway"
@@ -94,7 +98,7 @@ export default function Home() {
         <img
           src={FacialPhotoMobile}
           alt="Body Treatment"
-          className="mb-8"
+          className="mb-8 rounded-3xl"
         ></img>
         <Link
           to="/booking"

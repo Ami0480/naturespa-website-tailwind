@@ -25,11 +25,11 @@ export default function About() {
         </div>
       </div>
 
-      <section>
-        <h2 className="text-[40px]/tight italic z-20 font-cormorant tracking-wide">
+      <section className="container flex flex-col justify-center items-center">
+        <h2 className="text-[40px]/tight italic z-20 font-cormorant tracking-wide mt-8 mb-8">
           About Us
         </h2>
-        <p>
+        <p className="mb-8  text-[18px]/6 font-raleway">
           At our spa, we believe every guest deserves to feel truly cared for
           and appreciated. From the moment you arrive, our team is dedicated to
           creating an atmosphere where you feel valued, relaxed, and completely
@@ -38,7 +38,7 @@ export default function About() {
           restorative for the body and mind, but also a special experience
           designed just for you.
         </p>
-        <img src={RelaxRoom} alt="Relax Room"></img>
+        <img src={RelaxRoom} alt="Relax" className="rounded-3xl mb-8"></img>
       </section>
     </div>
   );
