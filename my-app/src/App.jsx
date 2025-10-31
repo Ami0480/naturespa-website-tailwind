@@ -5,6 +5,7 @@ import Home from "./Home";
 import About from "./About";
 import Product from "./Product";
 import Menu from "./Menu";
+import Booking from "./Booking";
 
 import "./App.css";
 
@@ -20,6 +21,7 @@ function App() {
         <Route path="/about" element={<About />}></Route>
         <Route path="/product" element={<Product />}></Route>
         <Route path="/menu" element={<Menu />}></Route>
+        <Route path="/booking" element={<Booking />}></Route>
       </Routes>
 
       <Footer />
