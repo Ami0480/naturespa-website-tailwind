@@ -66,11 +66,11 @@ export default function Header() {
           Menu
         </Link>
         <Link
-          to="/contact"
+          to="/product"
           onClick={() => setMenuOpen(false)}
           className="hover:underline decoration-1 duration-200"
         >
-          Contact
+          Product
         </Link>
       </section>
     </div>
