@@ -6,12 +6,14 @@ import About from "./About";
 import Product from "./Product";
 import Menu from "./Menu";
 import Booking from "./Booking";
+import ScrollToTop from "./ScrollToTop";
 
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
+      <ScrollToTop />
       <div className="absolute w-full z-40">
         <Header />
       </div>
