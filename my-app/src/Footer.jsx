@@ -24,21 +24,21 @@ export default function Footer() {
 
       <div className="flex">
         <div className="flex flex-1">
-          <ul className="font-raleway mt-5 flex flex-col gap-3 text-[20px]">
-            <li>Home</li>
-            <li>About</li>
-            <li>Menu</li>
-            <li>Product</li>
-          </ul>
+          <div className="font-raleway mt-5 flex flex-col gap-3 text-[20px]">
+            <Link to="/">Home</Link>
+            <Link to="/about">About</Link>
+            <Link to="/menu">Menu</Link>
+            <Link to="/product">Product</Link>
+          </div>
         </div>
 
         <div className="flex flex-1">
-          <ul className="font-raleway flex mt-5 flex-col gap-3 text-[20px]">
-            <li>08-100-200</li>
-            <li>10 Perth St, Perth</li>
-            <li>
+          <div className="font-raleway flex mt-5 flex-col gap-3 text-[20px]">
+            <p>08-100-200</p>
+            <p>10 Perth St, Perth</p>
+            <p>
               <a href="mailto:naturespa@gmail.com">naturespa@gmail.com</a>
-            </li>
+            </p>
             <li className="flex gap-5">
               <a
                 href="https://www.facebook.com"
@@ -58,7 +58,7 @@ export default function Footer() {
                 <img src={X} />
               </a>
             </li>
-          </ul>
+          </div>
         </div>
       </div>
 
