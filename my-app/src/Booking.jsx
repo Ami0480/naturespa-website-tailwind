@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import calendar from "./images/calendar-icon.svg";
 
 export default function Booking() {
   const [formData, setFormData] = useState({
@@ -9,7 +10,7 @@ export default function Booking() {
     email: "",
     treatment: "",
     therapist: "",
-    date: "",
+    appointment: "",
   });
 
   const navigate = useNavigate();
@@ -139,15 +140,21 @@ export default function Booking() {
         <label className="text-[18px]/6 font-raleway mb-2">
           When would you likt to visit?
         </label>
-
-        <input
-          type="date"
-          name="date"
-          value={formData.date}
-          onChange={handleChange}
-          className="w-full h-10 mt-2 mb-4 bg-white rounded-3xl text-black px-4 outline-none appearance-none"
-          required
-        ></input>
+        <div className="relative">
+          <input
+            type="datetime-local"
+            name="appointment"
+            value={formData.appointment}
+            onChange={handleChange}
+            className="w-full h-10 mt-2 mb-4 bg-white rounded-3xl text-black px-4 outline-none appearance-none"
+            required
+          ></input>
+          <img
+            src={calendar}
+            alt="calendar"
+            className="absolute top-3 right-5 pointer-events-none"
+          />
+        </div>
 
         <div className="flex justify-center">
           <button
