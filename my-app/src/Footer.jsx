@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 import logo from "./images/Logo.svg";
@@ -8,6 +9,13 @@ import X from "./images/x.svg";
 import SubmitArrow from "./images/arrow.svg";
 
 export default function Footer() {
+  const navigate = useNavigate();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    navigate("/subscribe");
+  };
+
   return (
     <div className="container bg-[#BFAFA5]">
       <Link to="/">
@@ -56,7 +64,7 @@ export default function Footer() {
 
       <div className="relative mt-10 flex flex-col gap-3 font-raleway text-[20px]">
         <p>Subscribe</p>
-        <form>
+        <form onSubmit={handleSubmit}>
           <input
             type="email"
             placeholder="Please enter your email..."
