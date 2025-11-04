@@ -6,6 +6,7 @@ import About from "./About";
 import Product from "./Product";
 import Menu from "./Menu";
 import Booking from "./Booking";
+import ThankYou from "./ThankYou";
 import ScrollToTop from "./ScrollToTop";
 
 import "./App.css";
@@ -24,6 +25,7 @@ function App() {
         <Route path="/product" element={<Product />}></Route>
         <Route path="/menu" element={<Menu />}></Route>
         <Route path="/booking" element={<Booking />}></Route>
+        <Route path="/thankyou" element={<ThankYou />}></Route>
       </Routes>
 
       <Footer />

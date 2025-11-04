@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export default function Booking() {
   const [formData, setFormData] = useState({
@@ -12,6 +12,8 @@ export default function Booking() {
     date: "",
   });
 
+  const navigate = useNavigate();
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
@@ -19,7 +21,7 @@ export default function Booking() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formData);
+    navigate("/thankyou");
   };
 
   return (
@@ -27,6 +29,7 @@ export default function Booking() {
       <h1 className="font-cormorant text-white text-6xl italic mt-20 mb-8">
         Book an appointment
       </h1>
+
       <label className="text-[18px]/6 font-raleway">First Name</label>
       <form onSubmit={handleSubmit}>
         <input
@@ -37,10 +40,9 @@ export default function Booking() {
           className="w-full h-10 mt-2 mb-4 bg-white rounded-3xl text-black px-4 outline-none"
           required
         ></input>
-      </form>
 
-      <label className="text-[18px]/6 font-raleway mb-2">Last Name</label>
-      <form onSubmit={handleSubmit}>
+        <label className="text-[18px]/6 font-raleway mb-2">Last Name</label>
+
         <input
           type="text"
           name="lastName"
@@ -49,10 +51,9 @@ export default function Booking() {
           className="w-full h-10 mt-2 mb-4 bg-white rounded-3xl text-black px-4 outline-none"
           required
         ></input>
-      </form>
 
-      <label className="text-[18px]/6 font-raleway mb-2">Mobile</label>
-      <form onSubmit={handleSubmit}>
+        <label className="text-[18px]/6 font-raleway mb-2">Mobile</label>
+
         <input
           type="text"
           name="mobile"
@@ -61,10 +62,9 @@ export default function Booking() {
           className="w-full h-10 mt-2 mb-4 bg-white rounded-3xl text-black px-4 outline-none"
           required
         ></input>
-      </form>
 
-      <label className="text-[18px]/6 font-raleway mb-2">Email</label>
-      <form onSubmit={handleSubmit}>
+        <label className="text-[18px]/6 font-raleway mb-2">Email</label>
+
         <input
           type="text"
           name="email"
@@ -73,12 +73,11 @@ export default function Booking() {
           className="w-full h-10 mt-2 mb-4 bg-white rounded-3xl text-black px-4 outline-none"
           required
         ></input>
-      </form>
 
-      <label className="text-[18px]/6 font-raleway mb-2">
-        What treatment would you like?
-      </label>
-      <form onSubmit={handleSubmit}>
+        <label className="text-[18px]/6 font-raleway mb-2">
+          What treatment would you like?
+        </label>
+
         <select
           type="text"
           name="treatment"
@@ -115,12 +114,11 @@ export default function Booking() {
           </option>
           <option value="Peeling">Facial Peeling- 60min ($240)</option>
         </select>
-      </form>
 
-      <label className="text-[18px]/6 font-raleway mb-2">
-        Preferred therapist
-      </label>
-      <form onSubmit={handleSubmit}>
+        <label className="text-[18px]/6 font-raleway mb-2">
+          Preferred therapist
+        </label>
+
         <select
           type="text"
           name="therapist"
@@ -137,12 +135,11 @@ export default function Booking() {
           <option value="michael">Michelle</option>
           <option value="emma">Emma</option>
         </select>
-      </form>
 
-      <label className="text-[18px]/6 font-raleway mb-2">
-        When would you likt to visit?
-      </label>
-      <form onSubmit={handleSubmit}>
+        <label className="text-[18px]/6 font-raleway mb-2">
+          When would you likt to visit?
+        </label>
+
         <input
           type="date"
           name="date"
@@ -151,16 +148,18 @@ export default function Booking() {
           className="w-full h-10 mt-2 mb-4 bg-white rounded-3xl text-black px-4 outline-none appearance-none"
           required
         ></input>
+
+        <div className="flex justify-center">
+          <button
+            type="submit"
+            to="/thankyou"
+            className="pr-5 pl-5 pt-3 pb-3 items-center text-white rounded-full font-bold font-raleway"
+            style={{ backgroundColor: "#af9b8e" }}
+          >
+            Book Now
+          </button>
+        </div>
       </form>
-      <div className="flex justify-center">
-        <Link
-          to="/thankyou"
-          className="pr-5 pl-5 pt-3 pb-3 items-center text-white rounded-full font-bold font-raleway"
-          style={{ backgroundColor: "#af9b8e" }}
-        >
-          Book Now
-        </Link>
-      </div>
     </div>
   );
 }
