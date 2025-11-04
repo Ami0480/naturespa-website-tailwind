@@ -75,6 +75,7 @@ export default function Header() {
 
         <Link
           to="/booking"
+          onClick={() => setMenuOpen(false)}
           className="pr-5 pl-5 pt-3 pb-3 mt-5 text-[#af9b8e] bg-white rounded-full font-bold font-raleway hover:opacity-80 ease-in-out"
         >
           Book Now

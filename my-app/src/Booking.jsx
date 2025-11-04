@@ -160,7 +160,7 @@ export default function Booking() {
           <button
             type="submit"
             to="/thankyou"
-            className="pr-5 pl-5 pt-3 pb-3 items-center text-white rounded-full font-bold font-raleway"
+            className="pr-5 pl-5 pt-3 pb-3 mt-5 mb-5 items-center text-white rounded-full font-bold font-raleway"
             style={{ backgroundColor: "#af9b8e" }}
           >
             Book Now
