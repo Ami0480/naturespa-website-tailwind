@@ -7,6 +7,8 @@ import Product from "./Product";
 import Menu from "./Menu";
 import Booking from "./Booking";
 import ThankYou from "./ThankYou";
+import Subscribe from "./Subscribe";
+
 import ScrollToTop from "./ScrollToTop";
 
 import "./App.css";
@@ -26,6 +28,7 @@ function App() {
         <Route path="/menu" element={<Menu />}></Route>
         <Route path="/booking" element={<Booking />}></Route>
         <Route path="/thankyou" element={<ThankYou />}></Route>
+        <Route path="/subscribe" element={<Subscribe />}></Route>
       </Routes>
 
       <Footer />
