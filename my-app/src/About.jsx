@@ -26,7 +26,7 @@ export default function About() {
       </div>
 
       <section className="container flex flex-col justify-center items-center">
-        <h2 className="text-[40px]/tight italic z-20 font-cormorant tracking-wide mt-8 mb-8">
+        <h2 className="text-[40px]/tight italic z-20 font-cormorant tracking-wide text-[#917A6B] mt-8 mb-8">
           About Us
         </h2>
         <p className="mb-8  text-[18px]/6 font-raleway">

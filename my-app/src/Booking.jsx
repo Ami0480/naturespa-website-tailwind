@@ -103,7 +103,7 @@ export default function Booking() {
           name="treatment"
           value={formData.treatment}
           onChange={handleChange}
-          className="w-full h-10 mt-2 mb-4 bg-white rounded-3xl text-black px-4 outline-none appearance-none"
+          className="w-full h-10 mt-2 mb-4 bg-white rounded-3xl text-neutral-600 px-4 outline-none appearance-none"
           required
         >
           <option value="">Select a treatment..</option>
@@ -144,7 +144,7 @@ export default function Booking() {
           name="therapist"
           value={formData.therapist}
           onChange={handleChange}
-          className="w-full h-10 mt-2 mb-4 bg-white rounded-3xl text-black px-4 outline-none appearance-none"
+          className="w-full h-10 mt-2 mb-4 bg-white rounded-3xl text-neutral-600 px-4 outline-none appearance-none"
           required
         >
           <option value="">Select a therapist..</option>
@@ -165,7 +165,7 @@ export default function Booking() {
             name="appointment"
             value={formData.appointment}
             onChange={handleChange}
-            className="w-full h-10 mt-2 mb-4 bg-white rounded-3xl text-black px-4 outline-none appearance-none"
+            className="w-full h-10 mt-2 mb-4 bg-white rounded-3xl text-neutral-600 px-4 outline-none appearance-none"
             required
           ></input>
           <img
