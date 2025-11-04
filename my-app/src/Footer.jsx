@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 
@@ -10,9 +10,11 @@ import SubmitArrow from "./images/arrow.svg";
 
 export default function Footer() {
   const navigate = useNavigate();
+  const [email, setEmail] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setEmail("");
     navigate("/subscribe");
   };
 
@@ -70,6 +72,8 @@ export default function Footer() {
             placeholder="Please enter your email..."
             className="w-full h-9 bg-[#cdbcb0] opacity-90 text-white px-2 text-[16px] rounded-md focus:outline-none"
             required
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
           />
           <button type="submit" className="absolute w-5 h-5 top-12.5 right-0">
             <img src={SubmitArrow} alt="right arrow" />

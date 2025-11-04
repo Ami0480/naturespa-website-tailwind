@@ -20,8 +20,27 @@ export default function Booking() {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+
+    try {
+      await fetch(
+        "https://script.google.com/macros/s/AKfycbyFqV9jO92AaUbREHdYfsTADTBkyhMz571dgnT4nu8p-R7EygsK4gMtUelVfzvn4A3HQw/exec",
+        {
+          method: "POST",
+          mode: "no-cors",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
+
+      console.log("Booking sent to Google Sheets:", formData);
+    } catch (error) {
+      console.error("Error submitting to Google Sheets:", error);
+    }
+
     navigate("/thankyou");
   };
 
@@ -152,14 +171,13 @@ export default function Booking() {
           <img
             src={calendar}
             alt="calendar"
-            className="absolute top-3 right-5 pointer-events-none"
+            className="absolute top-3 right-3 pointer-events-none"
           />
         </div>
 
         <div className="flex justify-center">
           <button
             type="submit"
-            to="/thankyou"
             className="pr-5 pl-5 pt-3 pb-3 mt-5 mb-5 items-center text-white rounded-full font-bold font-raleway"
             style={{ backgroundColor: "#af9b8e" }}
           >
