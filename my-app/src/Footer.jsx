@@ -68,13 +68,11 @@ export default function Footer() {
           <input
             type="email"
             placeholder="Please enter your email..."
-            className="w-full h-9 bg-white opacity-40 text-[#9c8f86] px-2 text-[16px]"
+            className="w-full h-9 bg-[#cdbcb0] opacity-90 text-white px-2 text-[16px] rounded-md focus:outline-none"
+            required
           />
-          <button
-            type="submit"
-            className="absolute w-5 h-5 top-12.5 right-0 text-[#9c8f86]"
-          >
-            <img src={SubmitArrow} />
+          <button type="submit" className="absolute w-5 h-5 top-12.5 right-0">
+            <img src={SubmitArrow} alt="right arrow" />
           </button>
         </form>
       </div>
