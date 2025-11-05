@@ -71,14 +71,14 @@ export default function Footer() {
               <input
                 type="email"
                 placeholder="Please enter your email..."
-                className="w-full h-9 bg-[#cdbcb0] opacity-90 text-white px-2 text-[16px] rounded-md focus:outline-none md:w-1/2"
+                className="w-full h-9 bg-[#cdbcb0] opacity-90 text-white px-2 text-[16px] rounded-md focus:outline-none md:w-56"
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
               <button
                 type="submit"
-                className="absolute w-5 h-5 top-11 right-0 md:right-70 md:top-12"
+                className="absolute w-5 h-5 top-11 right-0 md:right-40 md:top-12"
               >
                 <img src={SubmitArrow} alt="right arrow" />
               </button>
