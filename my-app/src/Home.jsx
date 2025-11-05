@@ -25,11 +25,7 @@ export default function Home() {
 
         <div className="absolute w-full h-screen flex flex-col items-center justify-center">
           <h1>Nature Spa</h1>
-          <Link
-            to="/booking"
-            className="link"
-            style={{ backgroundColor: "#af9b8e" }}
-          >
+          <Link to="/booking" className="link">
             Book Now
           </Link>
         </div>
@@ -85,11 +81,7 @@ export default function Home() {
                 you boost overall wellness and feel more vibrant, balanced, and
                 refreshed.
               </p>
-              <Link
-                to="/menu"
-                className="hidden link md:inline-block"
-                style={{ backgroundColor: "#af9b8e" }}
-              >
+              <Link to="/menu" className="hidden link md:inline-block">
                 View Treatment
               </Link>
             </div>
@@ -108,11 +100,7 @@ export default function Home() {
             </div>
           </div>
 
-          <Link
-            to="/menu"
-            className="link md:hidden"
-            style={{ backgroundColor: "#af9b8e" }}
-          >
+          <Link to="/menu" className="link md:hidden">
             View Treatment
           </Link>
         </section>
@@ -128,11 +116,7 @@ export default function Home() {
                 this way, you reveal a healthy, radiant complexion and feel
                 renewed from the inside out.
               </p>
-              <Link
-                to="/menu"
-                className="hidden link md:inline-block mb-10"
-                style={{ backgroundColor: "#af9b8e" }}
-              >
+              <Link to="/menu" className="hidden link md:inline-block mb-10">
                 View Treatment
               </Link>
             </div>
@@ -150,18 +134,14 @@ export default function Home() {
             </div>
           </div>
 
-          <Link
-            to="/menu"
-            className="link mb-10 md:hidden"
-            style={{ backgroundColor: "#af9b8e" }}
-          >
+          <Link to="/menu" className="link mb-10 md:hidden">
             View Treatment
           </Link>
         </section>
       </div>
 
       <div className="hero relative w-full h-screen">
-        <div className="absolute w-full h-screen bg-linear-to-b from-black via-[rgba(0,0,0,0.2)] to-transparent z-10"></div>
+        <div className="absolute w-full h-screen bg-linear-to-b from-black via-black/25 to-transparent z-10"></div>
         <img
           src={SunriseMobile}
           alt="Sunrise"
@@ -170,11 +150,7 @@ export default function Home() {
 
         <div className="absolute w-full h-screen flex flex-col items-center justify-center z-20">
           <h2>Enjoy your journey</h2>
-          <Link
-            to="/booking"
-            className="link"
-            style={{ backgroundColor: "#af9b8e" }}
-          >
+          <Link to="/booking" className="link">
             Book Now
           </Link>
         </div>

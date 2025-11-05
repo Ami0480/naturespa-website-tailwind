@@ -7,7 +7,7 @@ import OurProduct from "./images/our-product.jpg";
 export default function Product() {
   return (
     <div className="relative z-0">
-      <div className="absolute w-full h-screen inset-0 bg-linear-to-b from-black via-[rgba(0,0,0,0.2)] to-transparent z-10"></div>
+      <div className="absolute w-full h-screen inset-0 bg-linear-to-b from-black via-black/20 to-transparent z-10"></div>
       <img
         src={ProductOil}
         alt="Product Photo"
