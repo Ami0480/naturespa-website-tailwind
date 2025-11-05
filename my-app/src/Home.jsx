@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 
 import BackgroundVideo from "./images/background-video.mp4";
-import EssentialOil from "./images/essential-oil.jpg";
+import EssentialOilMobile from "./images/essential-oil.jpg";
+import EssentialOilDesktop from "./images/essential-oil-desktop.jpg";
 import BodyPhotoMobile from "./images/body-treatment-photo.jpg";
 import FacialPhotoMobile from "./images/facial-treatment-photo.jpg";
 import SunriseMobile from "./images/sunrise.jpg";
@@ -34,21 +35,22 @@ export default function Home() {
 
       <section className="relative w-full">
         <div className="relative">
-          <div className="absolute w-full h-screen bg-linear-to-b from-black via-[rgba(0,0,0,0.1)] to-transparent z-10"></div>
+          <div className="absolute w-full h-screen bg-linear-to-b from-black via-black/10 to-transparent z-10"></div>
           <div className="container">
             <img
-              src={EssentialOil}
+              src={EssentialOilMobile}
               alt="Essential Oil"
-              className="w-60 object-contain mt-40 ml-25 z-0 absolute"
+              className="w-60 object-cover right-5 top-40 z-0 absolute"
             ></img>
-            <div className="absolute w-60 flex flex-col justify-center mt-20">
+
+            <div className="absolute flex flex-col justify-center mt-20">
               <h2 className="flex flex-col z-20">
                 <span>Calm</span>
                 <span>Rejuvenate</span>
                 <span>Bliss</span>
               </h2>
 
-              <p className="mt-5 z-20">
+              <p className="mt-5 z-20 w-60">
                 Let your mind unwind, your body regain its energy, and your
                 spirit feel light and refreshed, as every moment nurtures your
                 inner wellness, restores your vitality, and enhances your

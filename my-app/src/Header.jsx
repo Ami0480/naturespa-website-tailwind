@@ -13,11 +13,15 @@ export default function Header() {
 
   return (
     <div className="header">
-      <div className="container flex place-content-between">
+      <div className="container m-auto flex place-content-between">
         <Link to="/">
-          <img src={logo} />
+          <img className="w-8 h-8" src={logo} />
         </Link>
-        <img src={hamburger} onClick={() => setMenuOpen(true)} />
+        <img
+          className="w-8 h-8"
+          src={hamburger}
+          onClick={() => setMenuOpen(true)}
+        />
       </div>
       {menuOpen && (
         <div
