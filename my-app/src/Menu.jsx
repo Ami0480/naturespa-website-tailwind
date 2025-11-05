@@ -46,19 +46,25 @@ export default function Menu() {
 
   return (
     <div className="container w-full h-full bg-black font-light">
-      <h1 className="flex justify-center mt-20 mb-8">Menu</h1>
+      <h1 className="flex justify-center mt-20 mb-8 md:mb-16">Menu</h1>
       <h3 className="z-20 mb-2">Body Treatment</h3>
       {bodyTreatments.map((service, index) => (
-        <div className="service flex border-b pt-4 items-end" key={index}>
+        <div
+          className="service flex border-b pt-4 items-end md:pt-6"
+          key={index}
+        >
           <h4 className="flex-2">{service.name}</h4>
           <h4 className="flex-1 text-right">{service.duration}</h4>
           <h4 className="flex-1 text-right">{service.price}</h4>
         </div>
       ))}
 
-      <h3 className="mb-2 mt-10">Facial Treatment</h3>
+      <h3 className="mb-2 mt-10 md:mt-20">Facial Treatment</h3>
       {facialTreatments.map((service, index) => (
-        <div className="service flex border-b pt-4 items-end" key={index}>
+        <div
+          className="service flex border-b pt-4 items-end md:pt-6"
+          key={index}
+        >
           <h4 className="menu flex-2">{service.name}</h4>
           <h4 className="menu flex-1 text-right">{service.duration}</h4>
           <h4 className="menu flex-1 text-right">{service.price}</h4>
@@ -67,7 +73,7 @@ export default function Menu() {
       <div className="flex justify-center">
         <Link
           to="/booking"
-          className="link mb-8"
+          className="link mt-20 mb-8"
           style={{ backgroundColor: "#af9b8e" }}
         >
           Book Now
