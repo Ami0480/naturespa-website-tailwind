@@ -7,7 +7,7 @@
 }
 
 .container {
-  @apply p-5 m-auto md:p-28;
+  @apply p-5 m-auto md:p-20;
 }
 
 .navbar {
@@ -35,7 +35,7 @@ h4 {
 }
 
 .link {
-  @apply text-white font-bold font-raleway md:text-2xl mt-4 md:font-medium;
+  @apply text-white font-bold font-raleway md:text-2xl px-5 py-3 mt-7 rounded-full md:font-medium;
 }
 .link-button {
   @apply text-white font-bold font-raleway hover:underline decoration-1 duration-200;

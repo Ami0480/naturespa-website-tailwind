@@ -15,10 +15,7 @@ export default function Product() {
       ></img>
       <div className="absolute inset-0 w-full h-screen flex flex-col justify-center items-center z-20">
         <h1>Product</h1>
-        <Link
-          to="/booking"
-          className="link pr-5 pl-5 pt-3 pb-3 mt-5 bg-[#BFAFA5] rounded-full"
-        >
+        <Link to="/booking" className="link bg-[#BFAFA5]">
           Book Now
         </Link>
       </div>

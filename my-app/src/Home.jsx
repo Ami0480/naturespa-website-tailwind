@@ -27,7 +27,7 @@ export default function Home() {
           <h1>Nature Spa</h1>
           <Link
             to="/booking"
-            className="link pr-5 pl-5 pt-3 pb-3 mt-5 rounded-full"
+            className="link"
             style={{ backgroundColor: "#af9b8e" }}
           >
             Book Now
@@ -87,7 +87,7 @@ export default function Home() {
               </p>
               <Link
                 to="/menu"
-                className="hidden md:inline-block link px-5 py-3 rounded-full"
+                className="hidden link md:inline-block"
                 style={{ backgroundColor: "#af9b8e" }}
               >
                 View Treatment
@@ -110,7 +110,7 @@ export default function Home() {
 
           <Link
             to="/menu"
-            className="link px-5 py-3 mt-5 rounded-full md:hidden"
+            className="link md:hidden"
             style={{ backgroundColor: "#af9b8e" }}
           >
             View Treatment
@@ -118,7 +118,7 @@ export default function Home() {
         </section>
 
         <section className="container flex flex-col justify-center items-center">
-          <div className="md:flex md:flex-row-reverse md:gap-12 md:mt-10">
+          <div className="md:flex md:flex-row-reverse md:gap-12 md:my-20">
             <div className="md:flex-1 md:flex md:flex-col md:gap-6 md:items-center">
               <h2 className="text-[#917A6B] my-8">Facial Treatment</h2>
               <p className="mb-8">
@@ -130,7 +130,7 @@ export default function Home() {
               </p>
               <Link
                 to="/menu"
-                className="hidden md:inline-block link px-5 py-3 mt-5 mb-10 rounded-full"
+                className="hidden link md:inline-block mb-10"
                 style={{ backgroundColor: "#af9b8e" }}
               >
                 View Treatment
@@ -152,7 +152,7 @@ export default function Home() {
 
           <Link
             to="/menu"
-            className="link px-5 py-3 mt-5 mb-10 rounded-full md:hidden"
+            className="link mb-10 md:hidden"
             style={{ backgroundColor: "#af9b8e" }}
           >
             View Treatment
@@ -172,7 +172,7 @@ export default function Home() {
           <h2>Enjoy your journey</h2>
           <Link
             to="/booking"
-            className="link px-5 py-3 mt-5 rounded-full"
+            className="link"
             style={{ backgroundColor: "#af9b8e" }}
           >
             Book Now
