@@ -14,20 +14,18 @@ export default function Product() {
         className="w-full h-screen object-cover inset-0"
       ></img>
       <div className="absolute inset-0 w-full h-screen flex flex-col justify-center items-center z-20">
-        <h1 className="font-cormorant text-white text-6xl italic">Product</h1>
+        <h1>Product</h1>
         <Link
           to="/booking"
-          className="pr-5 pl-5 pt-3 pb-3 mt-5 bg-[#BFAFA5] font-raleway rounded-full font-bold"
+          className="link pr-5 pl-5 pt-3 pb-3 mt-5 bg-[#BFAFA5] rounded-full"
         >
           Book Now
         </Link>
       </div>
 
       <section className="container flex flex-col justify-center items-center">
-        <h2 className="text-[40px]/tight italic z-20 font-cormorant tracking-wide text-[#917A6B] mt-8 mb-8">
-          Our product
-        </h2>
-        <p className="mb-8  text-[18px]/6 font-raleway">
+        <h2 className="text-[#917A6B] mt-8 mb-8">Our product</h2>
+        <p className="mb-8">
           Our products are carefully crafted using only organic and natural
           ingredients, ensuring they remain completely free from harmful
           chemicals, synthetic substances, and artificial additives. By staying

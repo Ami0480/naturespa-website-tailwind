@@ -21,12 +21,10 @@ export default function Home() {
         <div className="absolute w-full h-screen bg-linear-to-b from-black via-transparent to-transparent"></div>
 
         <div className="absolute w-full h-screen flex flex-col items-center justify-center">
-          <h1 className="font-cormorant text-white text-6xl italic">
-            Nature Spa
-          </h1>
+          <h1>Nature Spa</h1>
           <Link
             to="/booking"
-            className="pr-5 pl-5 pt-3 pb-3 mt-5 text-white rounded-full font-bold font-raleway"
+            className="link pr-5 pl-5 pt-3 pb-3 mt-5 rounded-full"
             style={{ backgroundColor: "#af9b8e" }}
           >
             Book Now
@@ -44,13 +42,13 @@ export default function Home() {
               className="w-60 object-contain mt-40 ml-25 z-0 absolute"
             ></img>
             <div className="absolute w-60 flex flex-col justify-center mt-20">
-              <h2 className="flex flex-col text-[40px]/tight italic z-20 font-cormorant tracking-wide">
+              <h2 className="flex flex-col z-20">
                 <span>Calm</span>
                 <span>Rejuvenate</span>
                 <span>Bliss</span>
               </h2>
 
-              <p className="text-[18px]/6 mt-5 z-20 font-raleway">
+              <p className="mt-5 z-20">
                 Let your mind unwind, your body regain its energy, and your
                 spirit feel light and refreshed, as every moment nurtures your
                 inner wellness, restores your vitality, and enhances your
@@ -62,10 +60,8 @@ export default function Home() {
       </section>
 
       <section className="container mt-150 flex flex-col justify-center items-center">
-        <h2 className="text-[40px]/tight italic font-cormorant text-[#917A6B] mb-8">
-          Body Treatment
-        </h2>
-        <p className="mb-8 text-[18px]/6 font-raleway">
+        <h2 className="text-[#917A6B] mb-8">Body Treatment</h2>
+        <p className="mb-8">
           Treatments for the body help release tension, improve blood flow, and
           restore energy. They promote healthier skin, support flexibility, and
           ease stress. By caring for your body this way, you boost overall
@@ -78,17 +74,15 @@ export default function Home() {
         ></img>
         <Link
           to="/menu"
-          className="pr-5 pl-5 pt-3 pb-3 mt-5 text-white rounded-full font-bold font-raleway"
+          className="link pr-5 pl-5 pt-3 pb-3 mt-5 rounded-full"
           style={{ backgroundColor: "#af9b8e" }}
         >
           View Treatment
         </Link>
       </section>
       <section className="container flex flex-col justify-center items-center">
-        <h2 className="text-[40px]/tight italic font-cormorant text-[#917A6B] mb-8 mt-8">
-          Facial Treatment
-        </h2>
-        <p className="mb-8 text-[18px]/6 font-raleway">
+        <h2 className="text-[#917A6B] mb-8 mt-8">Facial Treatment</h2>
+        <p className="mb-8">
           Facial treatments help cleanse and nourish the skin, improving its
           texture and natural glow. They support hydration, reduce signs of
           stress, and refresh tired skin. By caring for your face this way, you
@@ -102,7 +96,7 @@ export default function Home() {
         ></img>
         <Link
           to="/menu"
-          className="pr-5 pl-5 pt-3 pb-3 mt-5 mb-10 text-white rounded-full font-bold font-raleway"
+          className="link pr-5 pl-5 pt-3 pb-3 mt-5 mb-10 rounded-full"
           style={{ backgroundColor: "#af9b8e" }}
         >
           View Treatment
@@ -118,12 +112,10 @@ export default function Home() {
         ></img>
 
         <div className="absolute w-full h-screen flex flex-col items-center justify-center z-20">
-          <h2 className="text-[40px]/tight italic font-cormorant">
-            Enjoy your journey
-          </h2>
+          <h2>Enjoy your journey</h2>
           <Link
             to="/booking"
-            className="pr-5 pl-5 pt-3 pb-3 mt-5 text-white rounded-full font-bold font-raleway"
+            className="link pr-5 pl-5 pt-3 pb-3 mt-5 rounded-full"
             style={{ backgroundColor: "#af9b8e" }}
           >
             Book Now

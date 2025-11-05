@@ -171,7 +171,7 @@ export default function Booking() {
           <img
             src={calendar}
             alt="calendar"
-            className="absolute top-3 right-3 pointer-events-none"
+            className="absolute top-4 right-3 pointer-events-none"
           />
         </div>
 

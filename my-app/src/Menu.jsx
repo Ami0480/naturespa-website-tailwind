@@ -46,46 +46,28 @@ export default function Menu() {
 
   return (
     <div className="container w-full h-full bg-black font-light">
-      <h1 className="font-cormorant text-white text-6xl italic flex justify-center mt-20 mb-8">
-        Menu
-      </h1>
-      <h3 className="text-3xl/tight italic z-20 font-cormorant tracking-wide mb-2">
-        Body Treatment
-      </h3>
+      <h1 className="flex justify-center mt-20 mb-8">Menu</h1>
+      <h3 className="z-20 mb-2">Body Treatment</h3>
       {bodyTreatments.map((service, index) => (
         <div className="service flex border-b pt-4 items-end" key={index}>
-          <span className="flex-2 text-[18px]/6 font-raleway">
-            {service.name}
-          </span>
-          <span className="flex-1 text-right text-[18px]/6 font-raleway">
-            {service.duration}
-          </span>
-          <span className="flex-1 text-right text-[18px]/6 font-raleway">
-            {service.price}
-          </span>
+          <h4 className="flex-2">{service.name}</h4>
+          <h4 className="flex-1 text-right">{service.duration}</h4>
+          <h4 className="flex-1 text-right">{service.price}</h4>
         </div>
       ))}
 
-      <h3 className="text-3xl/tight italic z-20 font-cormorant tracking-wide mb-2 mt-10">
-        Facial Treatment
-      </h3>
+      <h3 className="mb-2 mt-10">Facial Treatment</h3>
       {facialTreatments.map((service, index) => (
         <div className="service flex border-b pt-4 items-end" key={index}>
-          <span className="flex-2 text-[18px]/6 font-raleway">
-            {service.name}
-          </span>
-          <span className="flex-1 text-right text-[18px]/6 font-raleway">
-            {service.duration}
-          </span>
-          <span className="flex-1 text-right text-[18px]/6 font-raleway">
-            {service.price}
-          </span>
+          <h4 className="menu flex-2">{service.name}</h4>
+          <h4 className="menu flex-1 text-right">{service.duration}</h4>
+          <h4 className="menu flex-1 text-right">{service.price}</h4>
         </div>
       ))}
       <div className="flex justify-center">
         <Link
           to="/booking"
-          className="pr-5 pl-5 pt-3 pb-3 mt-10 mb-8 text-white rounded-full font-bold font-raleway"
+          className="link pr-5 pl-5 pt-3 pb-3 mt-10 mb-8 rounded-full"
           style={{ backgroundColor: "#af9b8e" }}
         >
           Book Now

@@ -26,7 +26,7 @@ export default function Footer() {
 
       <div className="flex">
         <div className="flex flex-1">
-          <div className="font-raleway mt-5 flex flex-col gap-3 text-[20px]">
+          <div className="link-footer mt-10 flex flex-col gap-3">
             <Link to="/">Home</Link>
             <Link to="/about">About</Link>
             <Link to="/menu">Menu</Link>
@@ -35,10 +35,10 @@ export default function Footer() {
         </div>
 
         <div className="flex flex-1">
-          <div className="font-raleway flex mt-5 flex-col gap-3 text-[20px]">
-            <p>08-100-200</p>
-            <p>10 Perth St, Perth</p>
-            <p>
+          <div className="flex mt-11 flex-col gap-4">
+            <p className="link-footer">08-100-200</p>
+            <p className="link-footer">10 Perth St, Perth</p>
+            <p className="link-footer">
               <a href="mailto:naturespa@gmail.com">naturespa@gmail.com</a>
             </p>
             <li className="flex gap-5">
@@ -65,7 +65,7 @@ export default function Footer() {
       </div>
 
       <div className="relative mt-10 flex flex-col gap-3 font-raleway text-[20px]">
-        <p>Subscribe</p>
+        <p className="link-footer">Subscribe</p>
         <form onSubmit={handleSubmit}>
           <input
             type="email"
@@ -75,12 +75,12 @@ export default function Footer() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
-          <button type="submit" className="absolute w-5 h-5 top-12.5 right-0">
+          <button type="submit" className="absolute w-5 h-5 top-11 right-0">
             <img src={SubmitArrow} alt="right arrow" />
           </button>
         </form>
       </div>
-      <p className="text-[14px] mt-10 font-raleway">NATURE@2025</p>
+      <p className="copywrite mt-10">NATURE@2025</p>
     </div>
   );
 }

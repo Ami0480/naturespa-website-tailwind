@@ -15,10 +15,10 @@ export default function About() {
           className="object-cover inset-0 h-screen w-full z-0"
         />
         <div className="absolute inset-0 flex flex-col justify-center items-center z-20">
-          <h1 className="font-cormorant text-white text-6xl italic">About</h1>
+          <h1>About</h1>
           <Link
             to="/booking"
-            className="pr-5 pl-5 pt-3 pb-3 mt-5 bg-[#BFAFA5] font-raleway rounded-full font-bold"
+            className="link pr-5 pl-5 pt-3 pb-3 mt-5 bg-[#BFAFA5] rounded-full"
           >
             Book Now
           </Link>
@@ -26,10 +26,8 @@ export default function About() {
       </div>
 
       <section className="container flex flex-col justify-center items-center">
-        <h2 className="text-[40px]/tight italic z-20 font-cormorant tracking-wide text-[#917A6B] mt-8 mb-8">
-          About Us
-        </h2>
-        <p className="mb-8  text-[18px]/6 font-raleway">
+        <h2 className="text-[#917A6B] mt-8 mb-8">About Us</h2>
+        <p className="mb-8">
           At our spa, we believe every guest deserves to feel truly cared for
           and appreciated. From the moment you arrive, our team is dedicated to
           creating an atmosphere where you feel valued, relaxed, and completely

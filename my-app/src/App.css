@@ -1,4 +1,4 @@
-@import url("@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
 
 @theme {
@@ -12,4 +12,38 @@
 
 .navbar {
   @apply font-raleway text-[20px];
+}
+
+h1 {
+  @apply font-cormorant text-white text-6xl italic font-bold;
+}
+
+h2 {
+  @apply text-[40px]/tight italic font-cormorant tracking-wide font-bold;
+}
+
+h3 {
+  @apply text-2xl/tight font-raleway tracking-wide;
+}
+
+p {
+  @apply text-[18px]/6 font-raleway;
+}
+
+h4 {
+  @apply text-[18px]/6 font-raleway;
+}
+
+.link {
+  @apply text-white font-bold font-raleway;
+}
+.link-button {
+  @apply text-white font-bold font-raleway hover:underline decoration-1 duration-200;
+}
+.link-footer {
+  @apply font-raleway text-[20px];
+}
+
+.copywrite {
+  @apply text-[14px];
 }

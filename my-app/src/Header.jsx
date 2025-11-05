@@ -44,31 +44,27 @@ export default function Header() {
           onClick={() => setMenuOpen(false)}
           className="absolute top-4 right-4 w-10 h-10"
         />
-        <Link
-          to="/"
-          onClick={() => setMenuOpen(false)}
-          className="hover:underline decoration-1 duration-200"
-        >
+        <Link to="/" onClick={() => setMenuOpen(false)} className="link-button">
           Home
         </Link>
         <Link
           to="/about"
           onClick={() => setMenuOpen(false)}
-          className="hover:underline decoration-1 duration-200"
+          className="link-button"
         >
           About
         </Link>
         <Link
           to="/menu"
           onClick={() => setMenuOpen(false)}
-          className="hover:underline decoration-1 duration-200"
+          className="link-button"
         >
           Menu
         </Link>
         <Link
           to="/product"
           onClick={() => setMenuOpen(false)}
-          className="hover:underline decoration-1 duration-200"
+          className="link-button"
         >
           Product
         </Link>
