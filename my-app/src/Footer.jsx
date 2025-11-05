@@ -26,7 +26,7 @@ export default function Footer() {
         </Link>
 
         <div className="md:flex md:gap-20">
-          <div className="flex md:flex-1">
+          <div className="flex gap-10 md:flex-1">
             <div className="flex flex-1">
               <div className="link-footer mt-10 flex flex-col gap-3">
                 <Link to="/">Home</Link>
@@ -71,15 +71,12 @@ export default function Footer() {
               <input
                 type="email"
                 placeholder="Please enter your email..."
-                className="w-full h-9 bg-[#cdbcb0] opacity-90 text-white px-2 text-[16px] rounded-md focus:outline-none md:w-56"
+                className="w-full h-9 bg-[#cdbcb0] opacity-90 text-white px-2 text-[16px] rounded-md focus:outline-none md:w-full"
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
-              <button
-                type="submit"
-                className="absolute w-5 h-5 top-11 right-0 md:right-40 md:top-12"
-              >
+              <button type="submit" className="absolute w-5 h-5 right-1 top-12">
                 <img src={SubmitArrow} alt="right arrow" />
               </button>
             </form>
