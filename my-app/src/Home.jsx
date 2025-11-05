@@ -140,7 +140,7 @@ export default function Home() {
         </section>
       </div>
 
-      <div className="hero relative w-full h-screen">
+      <div className="hero relative w-full h-screen md:mt-40">
         <div className="absolute w-full h-screen bg-linear-to-b from-black via-black/25 to-transparent z-10"></div>
         <img
           src={SunriseMobile}
