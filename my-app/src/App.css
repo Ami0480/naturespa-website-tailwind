@@ -35,7 +35,7 @@ h4 {
 }
 
 .link {
-  @apply text-white font-bold font-raleway md:text-2xl px-5 py-3 mt-7 rounded-full md:font-medium;
+  @apply bg-[#af9b8e] text-white font-bold font-raleway md:text-2xl px-5 py-3 mt-7 rounded-full md:font-medium;
 }
 .link-button {
   @apply text-white font-bold font-raleway hover:underline decoration-1 duration-200;
