@@ -20,22 +20,26 @@ export default function Product() {
         </Link>
       </div>
 
-      <section className="container flex flex-col justify-center items-center">
-        <h2 className="text-[#917A6B] mt-8 mb-8">Our product</h2>
-        <p className="mb-8">
-          Our products are carefully crafted using only organic and natural
-          ingredients, ensuring they remain completely free from harmful
-          chemicals, synthetic substances, and artificial additives. By staying
-          true to nature, we provide safe, sustainable, and authentic solutions
-          that not only support your well-being but also respect the
-          environment. Each product reflects our commitment to purity,
-          transparency, and uncompromising quality.
-        </p>
-        <img
-          src={OurProduct}
-          alt="Our Product"
-          className="rounded-3xl mb-8"
-        ></img>
+      <section className="container flex flex-col justify-center items-center md:flex-row md:gap-12">
+        <div className="md:flex-1">
+          <h2 className="text-[#917A6B] mt-8 mb-8">Our product</h2>
+          <p className="mb-8">
+            Our products are carefully crafted using only organic and natural
+            ingredients, ensuring they remain completely free from harmful
+            chemicals, synthetic substances, and artificial additives. By
+            staying true to nature, we provide safe, sustainable, and authentic
+            solutions that not only support your well-being but also respect the
+            environment. Each product reflects our commitment to purity,
+            transparency, and uncompromising quality.
+          </p>
+        </div>
+        <div className="md:flex-1">
+          <img
+            src={OurProduct}
+            alt="Our Product"
+            className="rounded-3xl mb-8"
+          ></img>
+        </div>
       </section>
     </div>
   );

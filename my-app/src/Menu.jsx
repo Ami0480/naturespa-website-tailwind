@@ -73,7 +73,7 @@ export default function Menu() {
       <div className="flex justify-center">
         <Link
           to="/booking"
-          className="link mt-20 mb-8"
+          className="link mb-8"
           style={{ backgroundColor: "#af9b8e" }}
         >
           Book Now
