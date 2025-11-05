@@ -7,7 +7,7 @@
 }
 
 .container {
-  @apply p-5;
+  @apply p-5 m-auto md:p-28;
 }
 
 .navbar {
@@ -15,27 +15,27 @@
 }
 
 h1 {
-  @apply font-cormorant text-white text-6xl italic font-bold;
+  @apply font-cormorant text-white text-6xl italic font-bold md:text-8xl;
 }
 
 h2 {
-  @apply text-[40px]/tight italic font-cormorant tracking-wide font-bold;
+  @apply text-[40px]/tight italic font-cormorant tracking-wide font-bold md:text-5xl;
 }
 
 h3 {
-  @apply text-2xl/tight font-raleway tracking-wide;
+  @apply text-2xl/tight font-raleway tracking-wide md:text-3xl;
 }
 
 p {
-  @apply text-[18px]/6 font-raleway;
+  @apply text-[18px]/6 font-raleway md:text-[20px] leading-7;
 }
 
 h4 {
-  @apply text-[18px]/6 font-raleway;
+  @apply text-[18px]/6 font-raleway md:text-2xl;
 }
 
 .link {
-  @apply text-white font-bold font-raleway;
+  @apply text-white font-bold font-raleway md:text-2xl mt-4 md:font-medium;
 }
 .link-button {
   @apply text-white font-bold font-raleway hover:underline decoration-1 duration-200;

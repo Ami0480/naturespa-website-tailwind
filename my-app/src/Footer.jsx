@@ -19,7 +19,7 @@ export default function Footer() {
   };
 
   return (
-    <div className="container bg-[#BFAFA5]">
+    <div className="p-5 bg-[#BFAFA5]">
       <Link to="/">
         <img src={logo} />
       </Link>
