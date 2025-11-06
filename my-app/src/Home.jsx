@@ -115,7 +115,7 @@ export default function Home() {
         </section>
 
         <section className="container flex flex-col justify-center items-center">
-          <div className="md:flex md:flex-row-reverse md:gap-12 md:my-20">
+          <div className="md:flex md:flex-row-reverse md:gap-12 md:my-40">
             <div className="md:flex-1 md:flex md:flex-col md:gap-6 md:items-center">
               <h2 className="text-[#917A6B] my-8 flex justify-center items-center">
                 Facial Treatment
@@ -157,7 +157,7 @@ export default function Home() {
         </section>
       </div>
 
-      <div className="hero relative w-full h-screen md:mt-40">
+      <div className="hero relative w-full h-screen">
         <div className="absolute w-full h-screen bg-linear-to-b from-black via-black/25 to-transparent z-10"></div>
         <img
           src={SunriseMobile}
