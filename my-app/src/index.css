@@ -1,8 +1,6 @@
 @import "tailwindcss";
 
 :root {
-  color-scheme: light dark;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -10,12 +8,5 @@
 }
 body {
   color: white;
-  background-color: #bfafa5;
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    color: white;
-    background-color: #453b2e;
-  }
+  background-color: #453b2e;
 }
