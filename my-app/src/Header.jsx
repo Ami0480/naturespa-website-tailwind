@@ -18,11 +18,53 @@ export default function Header() {
           <img className="w-8 h-8" src={logo} />
         </Link>
         <img
-          className="w-8 h-8"
+          className="w-8 h-8 md:hidden"
           src={hamburger}
           onClick={() => setMenuOpen(true)}
         />
+
+        <div className="md:relative">
+          <div className="md:flex md:gap-10">
+            <Link
+              to="/"
+              onClick={() => setMenuOpen(false)}
+              className="link-button md:mt-2.5"
+            >
+              Home
+            </Link>
+            <Link
+              to="/about"
+              onClick={() => setMenuOpen(false)}
+              className="link-button md:mt-2.5"
+            >
+              About
+            </Link>
+            <Link
+              to="/menu"
+              onClick={() => setMenuOpen(false)}
+              className="link-button md:mt-2.5"
+            >
+              Menu
+            </Link>
+            <Link
+              to="/product"
+              onClick={() => setMenuOpen(false)}
+              className="link-button md:mt-2.5"
+            >
+              Product
+            </Link>
+
+            <Link
+              to="/booking"
+              onClick={() => setMenuOpen(false)}
+              className="md:px-5 md:py-3 md:text-white md:bg-[#af9b8e] rounded-full font-bold font-raleway hover:opacity-80 ease-in-out"
+            >
+              Book Now
+            </Link>
+          </div>
+        </div>
       </div>
+
       {menuOpen && (
         <div
           className="fixed inset-0  z-20"
@@ -76,7 +118,7 @@ export default function Header() {
         <Link
           to="/booking"
           onClick={() => setMenuOpen(false)}
-          className="pr-5 pl-5 pt-3 pb-3 mt-5 text-[#af9b8e] bg-white rounded-full font-bold font-raleway hover:opacity-80 ease-in-out"
+          className="px-5 py-3 mt-5 text-[#af9b8e] bg-white rounded-full font-bold font-raleway hover:opacity-80 ease-in-out"
         >
           Book Now
         </Link>

@@ -25,7 +25,7 @@ export default function Home() {
 
         <div className="absolute w-full h-screen flex flex-col items-center justify-center">
           <h1>Nature Spa</h1>
-          <Link to="/booking" className="link">
+          <Link to="/booking" className="link md:hidden">
             Book Now
           </Link>
         </div>
