@@ -71,7 +71,7 @@ export default function Menu() {
         </div>
       ))}
       <div className="flex justify-center">
-        <Link to="/booking" className="link mb-8">
+        <Link to="/booking" className="link mb-8 hover:opacity-80 ease-in-out">
           Book Now
         </Link>
       </div>

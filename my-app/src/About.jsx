@@ -16,7 +16,7 @@ export default function About() {
         />
         <div className="absolute inset-0 flex flex-col justify-center items-center z-20">
           <h1>About</h1>
-          <Link to="/booking" className="link bg-[#BFAFA5]">
+          <Link to="/booking" className="link bg-[#BFAFA5] md:hidden">
             Book Now
           </Link>
         </div>

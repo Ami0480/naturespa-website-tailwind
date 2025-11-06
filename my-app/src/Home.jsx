@@ -25,7 +25,10 @@ export default function Home() {
 
         <div className="absolute w-full h-screen flex flex-col items-center justify-center">
           <h1>Nature Spa</h1>
-          <Link to="/booking" className="link md:hidden">
+          <Link
+            to="/booking"
+            className="link hover:opacity-80 ease-in-out md:hidden"
+          >
             Book Now
           </Link>
         </div>
@@ -81,7 +84,10 @@ export default function Home() {
                 you boost overall wellness and feel more vibrant, balanced, and
                 refreshed.
               </p>
-              <Link to="/menu" className="hidden link md:inline-block">
+              <Link
+                to="/menu"
+                className="hidden hover:opacity-80 ease-in-out link md:inline-block"
+              >
                 View Treatment
               </Link>
             </div>
@@ -100,7 +106,10 @@ export default function Home() {
             </div>
           </div>
 
-          <Link to="/menu" className="link md:hidden">
+          <Link
+            to="/menu"
+            className="link hover:opacity-80 ease-in-out md:hidden"
+          >
             View Treatment
           </Link>
         </section>
@@ -118,7 +127,10 @@ export default function Home() {
                 this way, you reveal a healthy, radiant complexion and feel
                 renewed from the inside out.
               </p>
-              <Link to="/menu" className="hidden link md:inline-block mb-10">
+              <Link
+                to="/menu"
+                className="hidden hover:opacity-80 ease-in-out link md:inline-block mb-10"
+              >
                 View Treatment
               </Link>
             </div>
@@ -136,7 +148,10 @@ export default function Home() {
             </div>
           </div>
 
-          <Link to="/menu" className="link mb-10 md:hidden">
+          <Link
+            to="/menu"
+            className="link hover:opacity-80 ease-in-out mb-10 md:hidden"
+          >
             View Treatment
           </Link>
         </section>
@@ -152,7 +167,7 @@ export default function Home() {
 
         <div className="absolute w-full h-screen flex flex-col items-center justify-center z-20">
           <h2>Enjoy your journey</h2>
-          <Link to="/booking" className="link">
+          <Link to="/booking" className="link hover:opacity-80 ease-in-out">
             Book Now
           </Link>
         </div>

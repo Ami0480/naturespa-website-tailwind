@@ -197,7 +197,7 @@ export default function Booking() {
         </div>
 
         <div className="flex justify-center">
-          <button type="submit" className="link">
+          <button type="submit" className="link hover:opacity-80 ease-in-out">
             Book Now
           </button>
         </div>

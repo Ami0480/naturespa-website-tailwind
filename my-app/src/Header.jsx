@@ -23,7 +23,7 @@ export default function Header() {
           onClick={() => setMenuOpen(true)}
         />
 
-        <div className="md:relative">
+        <div className="hidden md:inline-block md:relative">
           <div className="md:flex md:gap-10">
             <Link
               to="/"
