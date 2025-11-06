@@ -50,13 +50,13 @@ export default function Home() {
                 ></img>
 
                 <div className="absolute flex flex-col justify-center mt-20 md:absolute m-auto md:ml-28 md:w-[1000px]">
-                  <h2 className="flex flex-col z-20 md:flex-row md:gap-7 md:mt-40">
+                  <h2 className="flex flex-col z-20 md:flex-row md:gap-5 md:mt-40">
                     <span>Calm</span>
                     <span>Rejuvenate</span>
                     <span>Bliss</span>
                   </h2>
 
-                  <p className="mt-5 z-20 w-60 md:w-150">
+                  <p className="mt-5 z-20 w-60 md:w-96">
                     Let your mind unwind, your body regain its energy, and your
                     spirit feel light and refreshed, as every moment nurtures
                     your inner wellness, restores your vitality, and enhances
@@ -74,7 +74,7 @@ export default function Home() {
               <h2 className="text-[#917A6B] mb-8 mt-150 flex justify-center items-center">
                 Body Treatment
               </h2>
-              <p className="mb-8">
+              <p className="mb-8 text-center md:text-left">
                 Treatments for the body help release tension, improve blood
                 flow, and restore energy. They promote healthier skin, support
                 flexibility, and ease stress. By caring for your body this way,
@@ -108,8 +108,10 @@ export default function Home() {
         <section className="container flex flex-col justify-center items-center">
           <div className="md:flex md:flex-row-reverse md:gap-12 md:my-20">
             <div className="md:flex-1 md:flex md:flex-col md:gap-6 md:items-center">
-              <h2 className="text-[#917A6B] my-8">Facial Treatment</h2>
-              <p className="mb-8">
+              <h2 className="text-[#917A6B] my-8 flex justify-center items-center">
+                Facial Treatment
+              </h2>
+              <p className="mb-8 text-center md:text-left">
                 Facial treatments help cleanse and nourish the skin, improving
                 its texture and natural glow. They support hydration, reduce
                 signs of stress, and refresh tired skin. By caring for your face

@@ -24,8 +24,10 @@ export default function About() {
 
       <section className="container flex flex-col justify-center items-center md:flex-row-reverse md:gap-12">
         <div className="md:flex-1">
-          <h2 className="text-[#917A6B] mt-8 mb-8">About Us</h2>
-          <p className="mb-8">
+          <h2 className="text-[#917A6B] my-8 flex justify-center items-center">
+            About Us
+          </h2>
+          <p className="mb-8 flex text-center md:text-left">
             At our spa, we believe every guest deserves to feel truly cared for
             and appreciated. From the moment you arrive, our team is dedicated
             to creating an atmosphere where you feel valued, relaxed, and

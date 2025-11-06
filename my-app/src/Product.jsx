@@ -22,8 +22,10 @@ export default function Product() {
 
       <section className="container flex flex-col justify-center items-center md:flex-row md:gap-12">
         <div className="md:flex-1">
-          <h2 className="text-[#917A6B] mt-8 mb-8">Our product</h2>
-          <p className="mb-8">
+          <h2 className="text-[#917A6B] mt-8 mb-8 flex justify-center items-center">
+            Our product
+          </h2>
+          <p className="mb-8 text-center md:text-left">
             Our products are carefully crafted using only organic and natural
             ingredients, ensuring they remain completely free from harmful
             chemicals, synthetic substances, and artificial additives. By
