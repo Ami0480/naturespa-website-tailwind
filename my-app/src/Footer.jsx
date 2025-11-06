@@ -67,16 +67,19 @@ export default function Footer() {
           </div>
           <div className="relative mt-10 flex flex-col gap-3 font-raleway text-[20px] md:flex-1">
             <p className="link-footer">Subscribe</p>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className="relative md:relative">
               <input
                 type="email"
                 placeholder="Please enter your email..."
-                className="w-full h-9 bg-[#cdbcb0] opacity-90 text-white px-2 text-[16px] rounded-md focus:outline-none md:w-full"
+                className="w-full h-9 bg-[#cdbcb0] opacity-90 text-white px-2 pr-10 text-[16px] rounded-md focus:outline-none md:w-1/2"
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
-              <button type="submit" className="absolute w-5 h-5 right-1 top-12">
+              <button
+                type="submit"
+                className="absolute w-5 h-5 right-2 top-1/2 -translate-y-1/2 md:right-[calc(50%+0.5rem)]"
+              >
                 <img src={SubmitArrow} alt="right arrow" />
               </button>
             </form>
