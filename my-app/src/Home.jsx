@@ -74,7 +74,7 @@ export default function Home() {
         <section className="container flex flex-col justify-center items-center">
           <div className="md:flex md:flex-row md:gap-12 md:mt-10">
             <div className="md:flex-1 md:flex md:flex-col md:gap-6 md:items-center">
-              <h2 className="text-[#917A6B] mb-8 mt-150 flex justify-center items-center">
+              <h2 className="text-treatment-title mb-8 mt-150 flex justify-center items-center">
                 Body Treatment
               </h2>
               <p className="mb-8 text-center md:text-left">
@@ -117,7 +117,7 @@ export default function Home() {
         <section className="container flex flex-col justify-center items-center">
           <div className="md:flex md:flex-row-reverse md:gap-12 md:my-40">
             <div className="md:flex-1 md:flex md:flex-col md:gap-6 md:items-center">
-              <h2 className="text-[#917A6B] my-8 flex justify-center items-center">
+              <h2 className="text-treatment-title my-8 flex justify-center items-center">
                 Facial Treatment
               </h2>
               <p className="mb-8 text-center md:text-left">

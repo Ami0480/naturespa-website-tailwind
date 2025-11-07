@@ -57,7 +57,7 @@ export default function Header() {
             <Link
               to="/booking"
               onClick={() => setMenuOpen(false)}
-              className="md:px-5 md:py-3 md:text-white md:bg-[#af9b8e] rounded-full font-bold font-raleway hover:opacity-80 ease-in-out"
+              className="md:px-5 md:py-3 md:text-white md:bg-button rounded-full font-bold font-raleway hover:opacity-80 ease-in-out"
             >
               Book Now
             </Link>
@@ -75,7 +75,7 @@ export default function Header() {
       <section
         className={`navbar fixed top-0 flex flex-col items-center justify-center gap-y-9
 
-          bg-[#917a6b]
+          bg-mobile-nav-bg
         w-full
         h-screen
         transform
@@ -118,7 +118,7 @@ export default function Header() {
         <Link
           to="/booking"
           onClick={() => setMenuOpen(false)}
-          className="px-5 py-3 mt-5 text-[#af9b8e] bg-white rounded-full font-bold font-raleway hover:opacity-80 ease-in-out"
+          className="px-5 py-3 mt-5 text-button bg-white rounded-full font-bold font-raleway hover:opacity-80 ease-in-out"
         >
           Book Now
         </Link>

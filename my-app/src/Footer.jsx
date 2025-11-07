@@ -19,7 +19,7 @@ export default function Footer() {
   };
 
   return (
-    <div className="p-5 bg-[#BFAFA5]">
+    <div className="p-5 bg-footer-bg">
       <div className="container">
         <Link to="/">
           <img src={logo} />
@@ -71,7 +71,7 @@ export default function Footer() {
               <input
                 type="email"
                 placeholder="Please enter your email..."
-                className="w-full h-9 bg-[#cdbcb0] opacity-90 text-white px-2 pr-10 text-[16px] rounded-md focus:outline-none md:w-1/2"
+                className="w-full h-9 bg-footer-email-bg opacity-90 text-white px-2 pr-10 text-[16px] rounded-md focus:outline-none md:w-1/2"
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}

@@ -16,7 +16,7 @@ export default function About() {
         />
         <div className="absolute inset-0 flex flex-col justify-center items-center z-20">
           <h1>About</h1>
-          <Link to="/booking" className="link bg-[#BFAFA5] md:hidden">
+          <Link to="/booking" className="link md:hidden">
             Book Now
           </Link>
         </div>
@@ -24,7 +24,7 @@ export default function About() {
 
       <section className="container flex flex-col justify-center items-center md:flex-row-reverse md:gap-12">
         <div className="md:flex-1">
-          <h2 className="text-[#917A6B] my-8 flex justify-center items-center">
+          <h2 className="text-treatment-title my-8 flex justify-center items-center">
             About Us
           </h2>
           <p className="mb-8 flex text-center md:text-left">

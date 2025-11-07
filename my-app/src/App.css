@@ -4,6 +4,24 @@
 @theme {
   --font-cormorant: "Cormorant Garamond", serif;
   --font-raleway: "Raleway", sans-serif;
+
+  --color-button: #af9b8e;
+  --color-treatment-title: #917a6b;
+  --color-mobile-nav-bg: #917a6b;
+  --color-primary-bg: #453b2e;
+  --color-footer-bg: #bfafa5;
+  --color-footer-email-bg: #cdbcb0;
+}
+
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  color: white;
+  background-color: var(--color-primary-bg);
 }
 
 .container {
@@ -35,7 +53,7 @@ h4 {
 }
 
 .link {
-  @apply bg-[#af9b8e] text-white font-bold font-raleway md:text-2xl px-5 py-3 mt-7 rounded-full md:font-medium;
+  @apply bg-button text-white font-bold font-raleway md:text-2xl px-5 py-3 mt-7 rounded-full md:font-medium;
 }
 .link-button {
   @apply text-white font-bold font-raleway hover:underline decoration-1 duration-200;

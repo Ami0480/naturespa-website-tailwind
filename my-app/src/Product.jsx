@@ -15,14 +15,14 @@ export default function Product() {
       ></img>
       <div className="absolute inset-0 w-full h-screen flex flex-col justify-center items-center z-20">
         <h1>Product</h1>
-        <Link to="/booking" className="link bg-[#BFAFA5] md:hidden">
+        <Link to="/booking" className="link md:hidden">
           Book Now
         </Link>
       </div>
 
       <section className="container flex flex-col justify-center items-center md:flex-row md:gap-12">
         <div className="md:flex-1">
-          <h2 className="text-[#917A6B] mt-8 mb-8 flex justify-center items-center">
+          <h2 className="text-treatment-title mt-8 mb-8 flex justify-center items-center">
             Our product
           </h2>
           <p className="mb-8 text-center md:text-left">
