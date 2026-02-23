@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import calendar from "./images/calendar-icon.svg";
+import { supabase } from "./supabase-client";
 
 export default function Booking() {
   const [formData, setFormData] = useState({
@@ -23,24 +24,44 @@ export default function Booking() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    try {
-      await fetch(
-        "https://script.google.com/macros/s/AKfycbyFqV9jO92AaUbREHdYfsTADTBkyhMz571dgnT4nu8p-R7EygsK4gMtUelVfzvn4A3HQw/exec",
-        {
-          method: "POST",
-          mode: "no-cors",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(formData),
-        }
-      );
+    const durationMap = {
+      relaxation: "60min",
+      deep: "60min",
+      pregnancy: "75min",
+      lymphatic: "60min",
+      Scrub: "60min",
+      Detox: "120min",
+      Mask: "150min",
+      "Head-toe": "120min",
+      Calm: "60min",
+      Rejuvinate: "60min",
+      Refresh: "60min",
+      LED: "30min",
+      "F-scrub": "30min",
+      "F-mask": "60min",
+      Microdermabrasion: "60min",
+      Peeling: "60min",
+    };
 
-      console.log("Booking sent to Google Sheets:", formData);
-    } catch (error) {
-      console.error("Error submitting to Google Sheets:", error);
+    console.log("Submitting formData:", formData);
+
+    const { error } = await supabase.from("bookings").insert([
+      {
+        first_name: formData.firstName,
+        last_name: formData.lastName,
+        mobile: formData.mobile,
+        email: formData.email,
+        treatment: formData.treatment,
+        therapist: formData.therapist,
+        appointment: new Date(formData.appointment).toISOString(),
+        duration: durationMap[formData.treatment] || "",
+      },
+    ]);
+    if (error) {
+      console.error("Error submitting to supabase", error);
+      return;
     }
-
+    console.log("Booking saved to supabase", formData);
     navigate("/thankyou");
   };
 
