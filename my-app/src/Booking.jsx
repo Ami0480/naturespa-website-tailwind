@@ -25,22 +25,22 @@ export default function Booking() {
     e.preventDefault();
 
     const durationMap = {
-      relaxation: "60min",
-      deep: "60min",
-      pregnancy: "75min",
-      lymphatic: "60min",
-      Scrub: "60min",
-      Detox: "120min",
-      Mask: "150min",
-      "Head-toe": "120min",
-      Calm: "60min",
-      Rejuvinate: "60min",
-      Refresh: "60min",
-      LED: "30min",
-      "F-scrub": "30min",
-      "F-mask": "60min",
-      Microdermabrasion: "60min",
-      Peeling: "60min",
+      "Full Body Relaxation Massage ": "60min",
+      "Full Body Deep Tissue Massage ": "60min",
+      "Full Body Pregnancy Massage ": "75min",
+      "Lymphatic Drainage Massage": "60min",
+      "Body Scrub": "60min",
+      "Body Detox and Wrap": "120min",
+      "Full Body Mask": "150min",
+      "Head to Toe Massage": "120min",
+      "Calm Facial": "60min",
+      "Rejuvenate Facial": "60min",
+      "Refresh Facial": "60min",
+      "LED Light Therapy": "30min",
+      "Facial Scrub": "30min",
+      "Facial Scrub and Mask": "60min",
+      "Hydro Microdermabrasion Facial": "60min",
+      "Facial Peeling": "60min",
     };
 
     console.log("Submitting formData:", formData);
@@ -53,7 +53,9 @@ export default function Booking() {
         email: formData.email,
         treatment: formData.treatment,
         therapist: formData.therapist,
-        appointment: new Date(formData.appointment).toISOString(),
+        appointment: new Date(formData.appointment).toLocaleString("sv-SE", {
+          timeZone: "Australia/Perth",
+        }),
         duration: durationMap[formData.treatment] || "",
       },
     ]);
@@ -136,38 +138,48 @@ export default function Booking() {
               required
             >
               <option value="">Select a treatment..</option>
-              <option value="relaxation">
+              <option value="Full Body Relaxation Massage">
                 Full Body Relaxation Massage - 60min ($140)
               </option>
-              <option value="deep">
+              <option value="Full Body Deep Tissue Massage">
                 Full Body Deep Tissue Massage - 60min ($140)
               </option>
-              <option value="pregnancy">
+              <option value="Full Body Pregnancy Massage">
                 Full Body Pregnancy Massage - 75min ($170)
               </option>
-              <option value="lymphatic">
+              <option value="Lymphatic Drainage Massage">
                 Lymphatic Drainage Massage - 60min ($180)
               </option>
-              <option value="Scrub">Body Scrub - 60min ($120)</option>
-              <option value="Detox">Body Detox and Wrap - 120min ($280)</option>
-              <option value="Mask">Full Body Mask- 150min ($320)</option>
-              <option value="Head-toe">
+              <option value="Body Scrub">Body Scrub - 60min ($120)</option>
+              <option value="Body Detox and Wrap">
+                Body Detox and Wrap - 120min ($280)
+              </option>
+              <option value="Full Body Mask">
+                Full Body Mask- 150min ($320)
+              </option>
+              <option value="Head to Toe Massage">
                 Head to Toe Massage- 120min ($210)
               </option>
-              <option value="Calm">Calm Facial- 60min ($210)</option>
-              <option value="Rejuvinate">
+              <option value="Calm Facial">Calm Facial- 60min ($210)</option>
+              <option value="Rejuvinate Facial">
                 Rejuvinate Facial - 60min ($210)
               </option>
-              <option value="Refresh">Refresh Facial- 60min ($210)</option>
-              <option value="LED">LED Light Therapy - 30min ($120)</option>
-              <option value="F-scrub">Facial Scrub- 30min ($120)</option>
-              <option value="F-mask">
+              <option value="Refresh Facial">
+                Refresh Facial- 60min ($210)
+              </option>
+              <option value="LED Light Therapy">
+                LED Light Therapy - 30min ($120)
+              </option>
+              <option value="Facial Scrub">Facial Scrub- 30min ($120)</option>
+              <option value="Facial Scrub and Mask">
                 Facial Scrub and Mask- 60min ($320)
               </option>
-              <option value="Microdermabrasion">
+              <option value="Hydro Microdermabrasion Facial">
                 Hydro Microdermabrasion Facial - 60min ($210)
               </option>
-              <option value="Peeling">Facial Peeling- 60min ($240)</option>
+              <option value="Facial Peeling">
+                Facial Peeling- 60min ($240)
+              </option>
             </select>
           </div>
           <div className="md:flex-1">
@@ -188,7 +200,7 @@ export default function Booking() {
               <option value="sarah">Sarah</option>
               <option value="amy">Amy</option>
               <option value="chloe">Chloe</option>
-              <option value="michael">Michelle</option>
+              <option value="michelle">Michelle</option>
               <option value="emma">Emma</option>
             </select>
           </div>
