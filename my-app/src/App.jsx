@@ -1,4 +1,5 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
+import StaffLogin from "./pages/staff-login";
 import Header from "./Header";
 import Footer from "./Footer";
 import Home from "./Home";
@@ -14,12 +15,17 @@ import ScrollToTop from "./ScrollToTop";
 import "./App.css";
 
 function App() {
+  const location = useLocation();
+  const isStaffLogin = location.pathname === "/staff-login";
+
   return (
-    <div className="App">
+    <>
       <ScrollToTop />
-      <div className="absolute w-full z-40">
-        <Header />
-      </div>
+      {!isStaffLogin && (
+        <div className="absolute w-full z-40">
+          <Header />
+        </div>
+      )}
 
       <Routes>
         <Route path="/" element={<Home />}></Route>
@@ -29,10 +35,10 @@ function App() {
         <Route path="/booking" element={<Booking />}></Route>
         <Route path="/thankyou" element={<ThankYou />}></Route>
         <Route path="/subscribe" element={<Subscribe />}></Route>
+        <Route path="/staff-login" element={<StaffLogin />}></Route>
       </Routes>
-
-      <Footer />
-    </div>
+      {!isStaffLogin && <Footer />}
+    </>
   );
 }
 
