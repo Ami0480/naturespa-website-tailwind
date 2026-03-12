@@ -25,16 +25,16 @@ export default function Booking() {
     e.preventDefault();
 
     const durationMap = {
-      "Full Body Relaxation Massage ": "60min",
-      "Full Body Deep Tissue Massage ": "60min",
-      "Full Body Pregnancy Massage ": "75min",
+      "Full Body Relaxation Massage": "60min",
+      "Full Body Deep Tissue Massage": "60min",
+      "Full Body Pregnancy Massage": "75min",
       "Lymphatic Drainage Massage": "60min",
       "Body Scrub": "60min",
       "Body Detox and Wrap": "120min",
       "Full Body Mask": "150min",
       "Head to Toe Massage": "120min",
       "Calm Facial": "60min",
-      "Rejuvenate Facial": "60min",
+      "Rejuvinate Facial": "60min",
       "Refresh Facial": "60min",
       "LED Light Therapy": "30min",
       "Facial Scrub": "30min",
@@ -114,7 +114,7 @@ export default function Booking() {
           <div className="md:flex-1">
             <label className="text-[18px]/6 font-raleway mb-2">Email</label>
             <input
-              type="text"
+              type="email"
               name="email"
               value={formData.email}
               onChange={handleChange}
@@ -209,7 +209,7 @@ export default function Booking() {
         <div className="md:flex md:w-1/2 md:my-5">
           <div className="md:flex-1 md:mr-2.5">
             <label className="text-[18px]/6 font-raleway mb-2">
-              When would you likt to visit?
+              When would you like to visit?
             </label>
             <div className="relative">
               <input

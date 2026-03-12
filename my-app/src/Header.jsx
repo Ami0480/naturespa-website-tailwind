@@ -15,7 +15,7 @@ export default function Header() {
     <div className="header">
       <div className="container m-auto flex place-content-between">
         <Link to="/">
-          <img className="w-8 h-8" src={logo} />
+          <img className="w-8 h-8" src={logo} alt="Nature Spa logo" />
         </Link>
         <img
           className="w-8 h-8 md:hidden"

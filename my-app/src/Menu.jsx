@@ -31,7 +31,7 @@ export default function Menu() {
 
   const facialTreatments = [
     { name: "Calm Facial", duration: "60minutes", price: "$210" },
-    { name: "Rejuvinate Facial", duration: "60minutes", price: "$210" },
+    { name: "Rejuvenate Facial", duration: "60minutes", price: "$210" },
     { name: "Refresh Facial", duration: "60minutes", price: "$210" },
     { name: "LED Light Therapy", duration: "30minutes", price: "$120" },
     { name: "Facial Scrub", duration: "30minutes", price: "$100" },
