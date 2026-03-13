@@ -1,6 +1,8 @@
 import { Routes, Route, useLocation } from "react-router-dom";
 import StaffLogin from "./pages/staff-login";
 import Index from "./dashboard/index";
+import Bookings from "./dashboard/bookings";
+import Subscribers from "./dashboard/subscribers";
 import Header from "./Header";
 import Footer from "./Footer";
 import Home from "./Home";
@@ -18,9 +20,9 @@ import "./App.css";
 function App() {
   const location = useLocation();
   const isStaffLogin = location.pathname === "/staff-login";
-  const isStaffOnly = ["/staff-login", "/dashboard"].includes(
-    location.pathname
-  );
+  const isStaffOnly =
+    location.pathname.startsWith("/dashboard") ||
+    location.pathname === "/staff-login";
 
   return (
     <>
@@ -41,6 +43,8 @@ function App() {
         <Route path="/subscribe" element={<Subscribe />}></Route>
         <Route path="/staff-login" element={<StaffLogin />}></Route>
         <Route path="/dashboard" element={<Index />}></Route>
+        <Route path="/dashboard/bookings" element={<Bookings />}></Route>
+        <Route path="/dashboard/subscribers" element={<Subscribers />}></Route>
       </Routes>
       {!isStaffOnly && <Footer />}
     </>
