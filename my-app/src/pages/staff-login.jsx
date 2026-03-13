@@ -8,6 +8,15 @@ export default function StaffLogin() {
   const [error, setError] = useState("");
   const navigate = useNavigate();
 
+  const handleSignUp = async () => {
+    const { data, error } = await supabase.auth.signUp({ email, password });
+    if (error) {
+      setError(error.message);
+    } else {
+      setError("Account created! You can now log in.");
+    }
+  };
+
   const handleSignIn = async () => {
     const { data, error } = await supabase.auth.signInWithPassword({
       email,
@@ -21,20 +30,20 @@ export default function StaffLogin() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center gap-8 m-28">
+    <div className="flex flex-col items-center justify-center gap-8 my-4">
       <h2 className="my-5">Staff Login</h2>
 
       <input
         type="email"
         placeholder="Please enter your email address"
-        className="bg-white text-gray-500 w-96 px-2 py-1 rounded"
+        className="bg-white text-gray-500 w-72 px-2 py-1 rounded"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
       />
       <input
         type="password"
         placeholder="Password"
-        className="bg-white text-gray-500 w-96 px-2 py-1 rounded"
+        className="bg-white text-gray-500 w-72 px-2 py-1 rounded"
         value={password}
         onChange={(e) => setPassword(e.target.value)}
       />
@@ -45,6 +54,14 @@ export default function StaffLogin() {
       >
         Log in
       </button>
+      <button
+        className="bg-[#af9b8e] text-[#453b2e] w-48 px-2 py-1 rounded"
+        type="button"
+        onClick={handleSignUp}
+      >
+        Sign Up
+      </button>
+      {error && <p className="text-red-500">{error}</p>}
     </div>
   );
 }
