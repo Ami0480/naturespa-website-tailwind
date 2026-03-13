@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
+import { supabase } from "./supabase-client";
 
 import logo from "./images/Logo.svg";
 import Facebook from "./images/facebook.svg";
@@ -12,8 +13,10 @@ export default function Footer() {
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    const { error } = await supabase.from("Subscribers").insert([{ email }]);
+    if (error) console.error("Subscribe error:", error.message);
     setEmail("");
     navigate("/subscribe");
   };

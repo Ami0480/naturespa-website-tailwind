@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function Index() {
   return (
     <div className="flex flex-col items-center justify-center m-4">
-      <div className="flex flex-col items-start w-full">
+      <div className="flex flex-col items-start w-full m-8">
         <h2>Nature Spa</h2>
         <h3>Admin</h3>
       </div>
