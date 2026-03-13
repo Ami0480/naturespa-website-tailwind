@@ -88,7 +88,7 @@ export default function Bookings() {
   return (
     <div className="flex flex-col items-center m-4">
       {/* Header */}
-      <div className="flex flex-col items-start w-full m-8">
+      <div className="flex flex-col items-start w-full">
         <h2>Nature Spa</h2>
         <h3>Admin</h3>
       </div>
