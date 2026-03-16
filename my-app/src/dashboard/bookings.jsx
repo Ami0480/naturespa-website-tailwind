@@ -86,15 +86,20 @@ export default function Bookings() {
   ];
 
   return (
-    <div className="flex flex-col items-center m-4">
+    <div className="flex flex-col items-center justify-center m-4 md:mx-10">
       {/* Header */}
-      <div className="flex flex-col items-start w-full">
+      <div className="relative flex flex-col items-start w-full m-8 md:gap-4">
         <h2>Nature Spa</h2>
         <h3>Admin</h3>
+        <Link to="/staff-login" className="md:absolute md:right-0 md:top-0">
+          <button className="text-sm text-white border border-white px-3 py-1 rounded mt-3 md:mt-0 hover:bg-white hover:text-primary-bg transition-colors">
+            Back to Login
+          </button>
+        </Link>
       </div>
 
       {/* Tabs */}
-      <div className="flex gap-10 mt-4 w-full items-center justify-center">
+      <div className="flex gap-10 mt-2 w-full items-center justify-center md:gap-30">
         <h4 className="bg-[#af9b8e] p-2 rounded-tr rounded-tl">Bookings</h4>
         <Link to="/dashboard/subscribers">
           <h4 className="p-2">Subscribers</h4>

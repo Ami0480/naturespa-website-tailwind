@@ -9,23 +9,29 @@ export default function Subscribers() {
   useEffect(() => {
     async function fetchSubscribers() {
       const { data, error } = await supabase
-        .from("Subscribers")
+        .from("subscribers")
         .select("*")
         .order("created_at", { ascending: false });
-      if (!error) setSubscribers(data || []);
+      if (error) console.error("Supabase error:", error);
+      else setSubscribers(data || []);
       setLoading(false);
     }
     fetchSubscribers();
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center m-4">
-      <div className="flex flex-col items-start w-full">
+    <div className="flex flex-col items-center justify-center m-4 md:mx-10">
+      <div className="relative flex flex-col items-start w-full m-8 md:gap-4">
         <h2>Nature Spa</h2>
         <h3>Admin</h3>
+        <Link to="/staff-login" className="md:absolute md:right-0 md:top-0">
+          <button className="text-sm text-white border border-white px-3 py-1 rounded mt-3 md:mt-0 hover:bg-white hover:text-primary-bg transition-colors">
+            Back to Login
+          </button>
+        </Link>
       </div>
 
-      <div className="flex gap-10 mt-4 w-full items-center justify-center">
+      <div className="flex gap-10 mt-2 w-full items-center justify-center md:gap-30">
         <Link to="/dashboard/bookings">
           <h4 className="p-2">Bookings</h4>
         </Link>
@@ -48,7 +54,10 @@ export default function Subscribers() {
               <span>Date</span>
             </div>
             {subscribers.map((s) => (
-              <div key={s.id} className="grid grid-cols-2 text-sm text-[#453b2e] px-3 py-2 border-b last:border-0">
+              <div
+                key={s.id}
+                className="grid grid-cols-2 text-sm text-[#453b2e] px-3 py-2 border-b last:border-0"
+              >
                 <span>{s.email}</span>
                 <span>
                   {s.created_at
