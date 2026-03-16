@@ -15,7 +15,7 @@ export default function Footer() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const { error } = await supabase.from("Subscribers").insert([{ email }]);
+    const { error } = await supabase.from("subscribers").insert([{ email }]);
     if (error) console.error("Subscribe error:", error.message);
     setEmail("");
     navigate("/subscribe");
