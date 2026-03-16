@@ -9,11 +9,11 @@ export default function StaffLogin() {
   const navigate = useNavigate();
 
   const handleSignUp = async () => {
-    const { data, error } = await supabase.auth.signUp({ email, password });
+    const { error } = await supabase.auth.signUp({ email, password });
     if (error) {
       setError(error.message);
     } else {
-      setError("Account created! You can now log in.");
+      setError("Account created! Check your email to confirm, then log in.");
     }
   };
 
@@ -55,7 +55,7 @@ export default function StaffLogin() {
         Log in
       </button>
       <button
-        className="bg-[#af9b8e] text-[#453b2e] w-48 px-2 py-1 rounded"
+        className="bg-[#af9b8e] text-primary-bg w-48 px-2 py-1 rounded"
         type="button"
         onClick={handleSignUp}
       >
