@@ -6,14 +6,21 @@ export default function StaffLogin() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
+  const [success, setSuccess] = useState("");
   const navigate = useNavigate();
 
   const handleSignUp = async () => {
-    const { error } = await supabase.auth.signUp({ email, password });
+    const { error } = await supabase.auth.signUp({
+      email,
+      password,
+      options: { emailRedirectTo: `${window.location.origin}/dashboard` },
+    });
     if (error) {
       setError(error.message);
+      setSuccess("");
     } else {
-      setError("Account created! Check your email to confirm, then log in.");
+      setSuccess("Account created! Check your email to confirm, then log in.");
+      setError("");
     }
   };
 
@@ -62,6 +69,7 @@ export default function StaffLogin() {
         Sign Up
       </button>
       {error && <p className="text-red-500">{error}</p>}
+      {success && <p className="text-white">{success}</p>}
     </div>
   );
 }
